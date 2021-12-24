@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="main">  
+<header>
+  <h1 id="title">Happiness Survey Form</h1>
+  <p id="description"><em>Thank you for taking the time to help us understand you better</em></p> 
+  </header>
+  
+  
+  <form action="" id="survey-form">
+    
+  <div>
+    <label for="name" id="name-label">Name</label>
+    <input type="text" id="name" class="name" placeholder="Enter your name" required>
+  </div>
+  
+  <div>
+    <label for="email" id="email-label">Email</label>
+    <input type="email" id="email" class="email" placeholder="Enter your email" required>
+  </div>
+    
+  <div>
+    <label for="number" id="number-label">Age (Optional)</label>
+    <input type="number" id="number" class="number" placeholder="Current Age" min="1" max="100">
+  </div>
+    
+  <div>
+    <label for="dropdown" required>Select your current level of happiness</label>
+    <select name="happiness-level" id="dropdown">
+      <option disabled selected value>Select Current State</option>
+      <option value="Depressed">Depressed</option>
+      <option value="Sad">Sad</option>
+      <option value="Fine">Fine</option>
+      <option value="Satisfied">Satisfied</option>
+      <option value="Pleasant">Pleasant</option>
+      <option value="Happy">Happy</option>
+      <option value="Ultimate-Good">Ultimate Good</option>
+    </select>
+  </div>
+    
+  <div>
+    <p>Select options you have faced or are currently facing:</p>
+    <label>
+    <input class="checkbox" type="checkbox" name="abuse" id="abuse" value="abuse">
+     Abuse</label>
+    
+    <label>
+    <input class="checkbox" type="checkbox" name="drugs" id="drugs" value="drugs">
+    Drugs</label>
+    
+    <label>
+    <input class="checkbox" type="checkbox" name="alcohol" id="alcohol" value="alcohol">
+    Alcohol</label>
+    
+    <label>
+    <input class="checkbox" type="checkbox" name="divorce" id="divorce" value="divorce">
+    Divorce/Breakup</label>
+    
+    <label>
+    <input class="checkbox" type="checkbox" name="bullying" id="bullying" value="bullying">
+    Bullying</label>
+    
+    <label>
+    <input class="checkbox" type="checkbox" name="medical" id="medical" value="medical">
+    Medical Issues</label>
+    
+    <label>
+    <input class="checkbox" type="checkbox" name="other" id="other" value="other">
+    Other</label>  
+  </div>
+    
+  <div>
+    <p>Choose which option best describes you:</p>
+    
+    <label>
+    <input class="choose" type="radio" id="no-change" name="option" value="no-change">I don't want to change my current state</label>
+    
+    <label>
+    <input class="choose" type="radio" id="change" name="option" value="change">I would like to change my current state</label>
+    
+    <label>
+    <input class="choose" type="radio" id="idk" name="option" value="idk">I'm not sure</label>
+  </div>
+    
+  <div>
+    <label for="why" id="explain">Explain your answer to the previous question here:</label>
+    <br>
+    <textarea name="reason" id="why" cols="50" rows="10" placeholder="Enter your answer here..."></textarea>  
+  </div>
+  
+  <button id="submit">Submit</button>
+    </form>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
