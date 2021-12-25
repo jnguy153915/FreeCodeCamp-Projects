@@ -11,6 +11,7 @@ header {
   min-height: 50px;
   padding: 0px 30px;
   display: flex;
+  justify-content:space-around;
   align-items: center;
   position: fixed;
   background-color:white;
@@ -25,9 +26,9 @@ body{
 
 .nav-link{  
   display:flex;
-  align-items:right;
+  align-items:;
   padding:30px;
-  margin: 30px auto;
+  margin:30px auto;
 }
 
 nav ul{
@@ -47,8 +48,10 @@ a{
   text-decoration:none;
 }
 
+
+
 img{
-  width:35%;
+  width:20%;
   margin-right:auto;
 }
 
@@ -198,8 +201,14 @@ h2{
     cursor:pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 610px) {
   nav > ul {
     flex-direction: column;
+  }
+  
+  #nav-bar .nav-link{
+    padding:15px;
+    margin:0;
+    font-size:1.5rem;
   }
 }
