@@ -1,0 +1,274 @@
+html{
+  font-size:17px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top:30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+nav ul{
+  display:flex;
+  margin-right:auto;
+  flex-direction:row;
+  justify-content:end; 
+  list-style:none;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 2rem;
+  text-decoration: none;
+  color:black;
+  padding-top:2rem;
+}
+
+#button{
+  margin-top:30px;
+  border-radius:30px;
+  color:#BD70D9;
+  border: 2px solid #BD70D9;
+  padding:5px 25px;
+  font-size:1em;
+  transition: all .25s;
+}
+
+#button:hover{
+    background-color:#BD70D9;
+    border-color: white;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #add8e6;
+    transform: translateY(-0.25em);
+    cursor:pointer;
+}
+
+
+body{
+  font-family: "europa", sans-serif;
+  text-align:center;
+  background-color:white;
+}
+
+h1{
+  font-size:2rem;
+  color:#141c3a;
+  font-family: 'Share Tech', sans-serif;
+}
+
+h2,h3{
+  font-family: 'Share Tech', sans-serif;
+}
+
+#description{
+  color:#141c3a;
+  font-family: 'Share Tech', sans-serif;
+}
+
+#image{
+  display:block;
+  max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+#nft{
+  display:block;
+  border-radius:50%;
+  border:3px solid #BD70D9;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30px;
+}
+
+#About-me{
+  background-color: #BD70D9;
+  color:white;
+  margin-top:0;
+  padding-top:0;
+  margin:0;
+  padding-bottom:200px;
+  
+}
+
+#About-me h2{
+  padding:15px;
+  padding-top:30px;
+}
+
+#About-me p{
+  display:block;
+  padding:15px;
+  padding-top:0;
+  line-height:1.5;
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.container{
+  position:relative;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.About-Me{
+  position:absolute;
+  top:84%;
+  width:100%;
+}
+
+#front-end{
+  position:absolute;
+  top:135%;
+  width:90%;
+  height:600px;
+}
+
+.container2{
+  display:flex;
+  justify-content:center;
+  margin:0 auto;
+}
+
+.front-end{
+  padding:10px;
+  text-align:center;
+  background-color:white;
+  margin-top:0px;
+  border-radius:10px;
+  border:1px solid #E6ECF8;
+  margin-bottom:50px;
+}
+
+.front-end li{
+  list-style-type:none;
+  padding-right:40px;
+  line-height:2;
+}
+
+#purple{
+  color:#BD70D9;
+  font-weight:400;
+  padding-top:20px;
+}
+
+#front-end-icon{
+  padding-top:15px;
+}
+
+#projects{
+  position:absolute;
+  top:220%;
+  height:750px;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#projects img{
+  display:inline-block;
+  max-width:300px;
+  height:200px;
+  border-radius:10px;
+  border:1px solid black;
+}
+
+.project-container{
+  display:flex;
+  flex-direction:row;
+  margin:10px;
+  margin-top:30px;
+  justify-content:center;
+  max-width:100%;
+  flex-wrap:wrap;
+}
+
+.project{
+  width:45%;
+  padding:15px;
+  text-align:center;
+}
+
+#Contact{
+  position:absolute;
+  top:340%;
+  height:300px;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #BD70D9;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+  line-height:3;
+  color:#551A8B;
+  font-size:1.2rem;
+}
+
+@media(max-width:750px){
+  .project-container{
+    flex-direction:column;
+    max-width:100%;
+  }
+  
+  #Projects img{
+  display:inline-block;
+  max-width:300px;
+  height:200px;
+  border-radius:10px;
+  border:1px solid black;
+  }
+  
+  #projects{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+  }
+  
+  .project{
+  width:100%;
+  padding:15px;
+  text-align:center;
+  }
+  
+  #Contact{
+  position:absolute;
+  top:400%;
+  height:300px;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #BD70D9;
+  color:white;
+  }
+}
